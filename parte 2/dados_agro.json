@@ -1,0 +1,12 @@
+[
+    {
+        "talhao": "Norte-01",
+        "maquina": "Colhedora A",
+        "perda_p": 12.5
+    },
+    {
+        "talhao": "Sul-04",
+        "maquina": "Colhedora B",
+        "perda_p": 8.0
+    }
+]
