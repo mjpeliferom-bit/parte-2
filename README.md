@@ -2,7 +2,7 @@
 
 ## 📌 Sobre o Projeto
 
-O agronegócio da cana-de-açúcar é um dos pilares da economia brasileira. No entanto, as perdas durante a colheita — causadas por diferentes tipos de máquinas e métodos — representam um prejuízo significativo para os produtores rurais.
+O agronegócio da cana-de-açúcar é um dos pilares da economia brasileira. No entanto, as perdas durante a colheita  causadas por diferentes tipos de máquinas e métodos  representam um prejuízo significativo para os produtores rurais.
 
 O **FarmTech** é um sistema desenvolvido em Python que permite ao produtor simular e analisar as perdas na colheita de cana-de-açúcar, comparando diferentes máquinas colhedoras e calculando o impacto financeiro dessas perdas de forma clara e objetiva.
 
