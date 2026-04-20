@@ -45,4 +45,3 @@ def ler_numero(mensagem, minimo=0.0):
                 return valor
         except ValueError:
             print("Entrada inválida! Digite apenas números, como 120 ou 3.5.")
-            
