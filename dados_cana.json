@@ -1,0 +1,36 @@
+[
+    {
+        "data": "18/04/2026 20:30",
+        "talhao": {
+            "id": 1,
+            "nome": "Talhão A",
+            "area_hectares": 50.0,
+            "producao_estimada_ton": 400.0
+        },
+        "producao": 400.0,
+        "preco": 120.0,
+        "resultados": [
+            {
+                "maquina": "Colhedora Manual",
+                "indice_perda": 0.05,
+                "perda_toneladas": 20.0,
+                "prejuizo_reais": 2400.0,
+                "percentual": 5.0
+            },
+            {
+                "maquina": "Colhedora Mecânica A",
+                "indice_perda": 0.08,
+                "perda_toneladas": 32.0,
+                "prejuizo_reais": 3840.0,
+                "percentual": 8.0
+            },
+            {
+                "maquina": "Colhedora Mecânica B",
+                "indice_perda": 0.15,
+                "perda_toneladas": 60.0,
+                "prejuizo_reais": 7200.0,
+                "percentual": 15.0
+            }
+        ]
+    }
+]
