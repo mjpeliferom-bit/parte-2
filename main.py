@@ -11,6 +11,7 @@ from calculos import (
     calcular_percentual,
     ler_numero
 )
+from arquivos import salvar_dados_json, carregar_dados_json, gerar_relatorio_txt
 
 # ========== EXIBIÇÃO ==========
 
@@ -42,8 +43,6 @@ def escolher_maquina():
         except ValueError:
             print("Entrada inválida! Digite apenas o número da opção.")
 
-# ========== RELATÓRIO ==========
-
 def exibir_relatorio(maquina, producao, preco):
     perda = calcular_perda_toneladas(producao, maquina["indice_perda"])
     prejuizo = calcular_prejuizo_reais(perda, preco)
@@ -59,7 +58,6 @@ def exibir_relatorio(maquina, producao, preco):
     print(f"  Prejuízo        : R$ {prejuizo:,.2f}")
     print("=" * 50)
 
-    # Avaliação da perda
     if percentual <= 5:
         print("  ✔ Perda dentro do aceitável. Boa colheita!")
     elif percentual <= 10:
@@ -67,6 +65,19 @@ def exibir_relatorio(maquina, producao, preco):
     else:
         print("  ✘ Perda alta! Considere trocar o método de colheita.")
     print("=" * 50)
+
+    # Salva os dados no JSON e gera relatório TXT
+    dados = carregar_dados_json()
+    dados.append({
+        "talhao": talhao["nome"],
+        "maquina": maquina["nome"],
+        "producao_ton": producao,
+        "perda_ton": perda,
+        "perda_p": percentual,
+        "prejuizo_reais": prejuizo
+    })
+    salvar_dados_json(dados)
+    gerar_relatorio_txt(dados)
 
 # ========== MENU PRINCIPAL ==========
 
